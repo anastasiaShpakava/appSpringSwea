@@ -40,9 +40,10 @@ public class GreetingController {
         return "main";
     }
     @PostMapping ("filter")
-    public String add(@RequestParam String text,  Map<String, Object> model){
-        List<Message> messages=messageRepos.findByTag(text);
+    public String add(@RequestParam String filter,  Map<String, Object> model){
+        List<Message> messages=messageRepos.findByTag(filter);
         model.put("messages",messages);
+        return "main";
     }
 
 }
