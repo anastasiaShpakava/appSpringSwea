@@ -1,6 +1,5 @@
 package com.example.webAp.domain;
 
-
 import javax.persistence.*;
 import java.util.Set;
 
