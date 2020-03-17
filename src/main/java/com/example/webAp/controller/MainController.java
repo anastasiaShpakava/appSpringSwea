@@ -1,4 +1,4 @@
-package com.example.webAp;
+package com.example.webAp.controller;
 
 import com.example.webAp.domain.Message;
 import com.example.webAp.repos.MessageRepos;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     @Autowired
     private MessageRepos messageRepos;
 
