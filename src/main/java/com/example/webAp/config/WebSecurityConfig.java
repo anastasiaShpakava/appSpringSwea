@@ -31,6 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                    .logout()
                 .permitAll();
     }
+    
 
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
